@@ -35,11 +35,11 @@ echo "Building aes67-daemon ..."
 cmake \
 	-DCPP_HTTPLIB_DIR="${TOPDIR}/3rdparty/cpp-httplib" \
 	-DRAVENNA_ALSA_LKM_DIR="${TOPDIR}/3rdparty/ravenna-alsa-lkm" \
-	-DENABLE_TESTS=ON \
+	-DENABLE_TESTS=OFF \
 	-DWITH_AVAHI=ON \
 	-DFAKE_DRIVER=OFF \
 	-DWITH_SYSTEMD=ON \
-	-DWITH_STREAMER=ON \
+	-DWITH_STREAMER=OFF \
 	.
 make
 cd ..
